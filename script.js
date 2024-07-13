@@ -8,6 +8,9 @@ if (!userName || !userAge || !userCity) {
 else if (isNaN(userAge)) {
     alert('You entered not a number in age line');
 } 
+else if (userAge < 0 || userAge > 150){
+    alert('User, are you still alive?');
+}
 else if (!userName.trim() || !userAge.trim() || !userCity.trim()){
     alert('You entered nothing in some line!');
 }
